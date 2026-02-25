@@ -1,0 +1,25 @@
+{% load static %}
+
+<section class="crossfit-special">
+  <header>Crossfit Exercises</header>
+  <section>
+    <section class="Cross-section">
+      {% for item in exercise %}
+      <section class="cross-card">
+        {% if item.image %}
+        <img
+          src="{{ item.image.url }}"
+          alt="Program-img1"
+          width="70%"
+          height="70"
+        />
+        {% else%} <img src="" alt="Program-img1" width="100%" />
+        {%endif%}
+        <h4>{{item.title}}</h4>
+        <p>{{item.description | truncatechars:50}}</p>
+        <button>learn more</button>
+      </section>
+      {%endfor%}
+    </section>
+  </section>
+</section>

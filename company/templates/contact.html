@@ -1,0 +1,54 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<!-- HERO SECTION -->
+<section class="hero-img-section">
+  <img
+    src="{% static 'images/hero bg1.webp'%}"
+    alt="hero-img2"
+    width="100%"
+    height="720px"
+  />
+  <section class="hero-bg"></section>
+  <section class="hero-text">
+    <h1>Contact Us</h1>
+    <p>Get In Touch</p>
+  </section>
+</section>
+<!-- CONTACT FORMS -->
+<section class="form">
+  <section class="Contact-form">
+    <form action="#">
+      <section>
+        <label for="full-name">Full Name</label>
+        <input type="text" placeholder=" Full Name" required />
+      </section>
+      <section>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter Email" required />
+      </section>
+      <section>
+        <label for="Phone-Number">Phone</label>
+        <input type="tel" placeholder="Phone #" required />
+      </section>
+      <section>
+        <label for="Message">Message</label>
+        <textarea
+          name="Message"
+          id="Message"
+          placeholder="Say hello to us"
+        ></textarea>
+        <button>Send Message</button>
+      </section>
+    </form>
+  </section>
+  <section class="contact-Address">
+    <h2>Contact Info</h2>
+    <h6>Address</h6>
+    <p>{{contact_info.address}}</p>
+    <h6>Phone</h6>
+    <p><a href="#">{{contact_info.phone_number }}</a></p>
+    <h6>Email address</h6>
+    <p><a href="#">{{contact_info.email}}</a></p>
+  </section>
+</section>
+
+{%endblock%}

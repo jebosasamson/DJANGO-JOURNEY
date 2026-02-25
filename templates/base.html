@@ -1,0 +1,72 @@
+{% load static%}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrossFits</title>
+    <link rel="stylesheet" href="{% static 'css/index.css'%}" />
+  </head>
+  <body>
+    <main>
+      <!-- NAV BAR -->
+      <nav>
+        <section>
+          <a
+            href="{% url 'home'%}"
+            style="font-family: &quot;Arial&quot;; font-weight: 700"
+            >CrossFits</a
+          >
+        </section>
+        <section class="Nav-menu">
+          <ul>
+            <li><a href="{% url 'trainer'%}">Our Trainers</a></li>
+            <li><a href="{% url 'news'%}">News</a></li>
+            <li><a href="{% url 'about'%}">About</a></li>
+            <li><a href="{% url 'contact'%}">Contact</a></li>
+          </ul>
+        </section>
+      </nav>
+      {% block content%} {% endblock%}
+
+      <!-- footer -->
+      <footer>
+        <section>
+          <h3>About</h3>
+          <p>{{about_footer.description}}</p>
+          <button><a href="{% url 'about'%}">Read more</a></button>
+        </section>
+        <section>
+          <h3>Quick Menu</h3>
+          <ul>
+            <li><a href="{% url 'home'%}">Home</a></li>
+            <li><a href="{% url 'trainer'%}">Our Trainers</a></li>
+            <li><a href="{% url 'news'%}">News</a></li>
+            <li><a href="{% url 'about'%}">About</a></li>
+            <li><a href="{% url 'contact'%}">Contact</a></li>
+            <li><a href="#">The Club</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Program</h3>
+          <ul>
+            {% for item in programs %}
+            <li>
+              <a href="{% url 'program_detail' item.id %}">{{item.title}}</a>
+            </li>
+            {% endfor%}
+          </ul>
+        </section>
+        <section>
+          <h3>Social icons</h3>
+          {% for social in social_icon %}
+          <img src="{{social.image.url}}" alt="{{social.title}}" width="30px" />
+          {% endfor %}
+        </section>
+      </footer>
+      <footer><p>&copy; Mez studioz 2025</p></footer>
+    </main>
+  </body>
+</html>

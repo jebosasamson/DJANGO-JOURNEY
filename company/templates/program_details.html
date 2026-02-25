@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% load static %}{% block content %}
+<!-- PROGRAM DETAILS -->
+
+<section>
+  <section class="arrow">
+    <a href="{% url 'home'%}"
+      ><img src="{% static 'images/left-arrow.png'%}" alt="back" width="50px"
+    /></a>
+  </section>
+  <section class="program_details">
+    <img src="{{ program.image.url }}" alt="program-img" width="500px" />
+    <section class="program-detail-info">
+      <h4>{{program.title}}</h4>
+      <p>{{program.description}}</p>
+    </section>
+  </section>
+</section>
+{%endblock%}

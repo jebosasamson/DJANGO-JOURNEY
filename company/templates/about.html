@@ -1,0 +1,57 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<!-- HERO SECTION -->
+<section class="hero-img-section">
+  <img
+    src="{% static 'images/hero bg1.webp'%}"
+    alt="hero-img2"
+    width="100%"
+    height="720px"
+  />
+  <section class="hero-bg"></section>
+  <section class="hero-text">
+    <h1>About Crossfits</h1>
+    <p>Find The Healthy Way</p>
+  </section>
+</section>
+<!-- Club section -->
+<section class="club-section">
+  <section class="flex" class="club-img">
+    <img src="{{our_club.image.url}}" alt="club-img1" width="550px" />
+  </section>
+  <section class="club-text">
+    <header>{{our_club.title }}</header>
+    <p>{{our_club.description | truncatechars:350}}</p>
+    <button><a href="{% url 'our-club' %}">Join Our Club</a></button>
+  </section>
+</section>
+<!-- Feature section -->
+<section class="Feature">
+  <section class="feature-bg">
+    <section class="feature-opacity"></section>
+    <section class="feature-content">
+      <header>Our Team</header>
+      <section>
+        <section>
+          <img
+            src="{% static 'images/trainer person_1.jpg.webp'%}"
+            alt="trainer-img1"
+            style="border-radius: 50%"
+            width="150px"
+          />
+          <h5>Shane Green</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            maiores sunt enim placeat dolores suscipit optio ullam voluptatum
+            quo neque, eum libero quae! Eius rerum nesciunt illo, natus
+            assumenda, enim nam incidunt, mollitia quam animi vitae placeat quos
+            amet numquam nihil dolore. Totam aut perspiciatis culpa facilis
+            recusandae. Laboriosam, molestiae.
+          </p>
+          <button>Make Me Your Trainer</button>
+        </section>
+      </section>
+    </section>
+  </section>
+</section>
+<!-- Crossfit section -->
+{% include 'crossfit_exercise.html'%} {% endblock%}

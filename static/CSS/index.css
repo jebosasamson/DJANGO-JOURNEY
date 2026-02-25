@@ -1,0 +1,508 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+main {
+  margin: 0px 125px;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 0px 70px 20px 70px;
+  padding: 25px;
+}
+body {
+  background-image: url("https://preview.colorlib.com/theme/crossfits/images/bg.jpg.webp");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: black;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin-right: 30px;
+}
+strong {
+  font-weight: 300;
+}
+
+/* hero css */
+.hero-img-section {
+  position: relative;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.hero-text p {
+  font-size: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.hero-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 99.9%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* hero css */
+
+/* PROGRAM CSS */
+.program-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 70px 130px 70px;
+}
+.program-section header {
+  font-size: 2rem;
+  margin: 30px 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 450;
+  text-align: center;
+}
+
+.program-card-container {
+  display: flex;
+}
+.program-card {
+  width: 1000px;
+  margin-right: 20px;
+  border: 0.5px solid rgba(56, 56, 56, 0.2);
+}
+.program-card section {
+  padding: 20px;
+}
+.program-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 450;
+}
+.program-card p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-family: " Trebuchet MS", sans-serif;
+  font-weight: 300;
+}
+.program-card button {
+  padding: 10px 20px;
+  background-color: #fd7e14;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 300;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+/* PROGRAM CSS */
+
+/* CLUB CSS */
+.club-section {
+  display: flex;
+  gap: 100px;
+  margin: 130px 60px 130px 60px;
+  justify-items: center;
+  align-items: center;
+}
+.club-text p {
+  width: 90%;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: lightslategray;
+}
+.club-text header {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.club-text button {
+  background-color: transparent;
+  border: #fd7e14 1px solid;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.club-text button:hover {
+  background-color: #fd7e14;
+  color: white;
+}
+
+/* CLUB CSS */
+
+/* Feature CSS */
+.Feature {
+  text-align: center;
+  color: white;
+}
+
+.feature-bg {
+  /* background-image: url("https://preview.colorlib.com/theme/crossfits/images/bg_2.jpg.webp"); */
+  background-image: url("https://preview.colorlib.com/theme/crossfits/images/img_1.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-bg::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.feature-content {
+  padding: 7rem 16px;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  z-index: 3;
+  position: relative;
+}
+
+.feature-content header {
+  font-size: 2rem;
+}
+.feature-content img {
+  margin: 30px 0px;
+}
+.feature-content h5 {
+  font-size: 1.5rem;
+  margin: 0px 0px 30px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.feature-content p {
+  margin: 0px 0px 30px 0px;
+  line-height: 24px;
+}
+.feature-content button {
+  background-color: #fd7e14;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.1rem;
+  color: white;
+  border-radius: 5px;
+}
+/* Feature CSS */
+
+/* Cross-section CSS */
+
+.crossfit-special header {
+  font-size: 2rem;
+  margin: 30px 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 450;
+  text-align: center;
+}
+.Cross-section {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.cross-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: ease-in-out 0.8s translateY(-5px);
+}
+
+.cross-card img {
+  width: 30%;
+  margin-bottom: 15px;
+  height: auto;
+}
+.cross-card {
+  /* margin: 0px 25px; */
+  padding: 20px;
+  max-width: 300px;
+  border: 0.5px solid rgba(56, 56, 56, 0.2);
+}
+.cross-card h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.cross-card p {
+  font-size: 1rem;
+  color: darkslategray;
+  margin-bottom: 10px;
+}
+.cross-card button {
+  color: #fd7e14;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  background-color: transparent;
+}
+/* Cross-section CSS */
+
+/* Testimonial css */
+.Testimonial-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0px;
+  background-color: rgb(240, 238, 238);
+}
+.Testimonial-section header {
+  font-size: 2rem;
+  margin-bottom: px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 450;
+}
+.testimonial-content {
+  display: flex;
+  width: 80%;
+  padding: 25px;
+}
+.testimonial-card {
+  display: flex;
+  margin: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.testimonial-card img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.testimonial-card section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+}
+.testimonial-card section p {
+  font-size: 1rem;
+  color: darkslategray;
+  width: 350px;
+}
+/* Testimonial css */
+
+/* footer css */
+
+footer h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+footer {
+  background: #1e1e1c;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  padding: 40px;
+  justify-content: space-evenly;
+}
+footer section p {
+  width: 250px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+footer section ul {
+  flex-direction: column;
+}
+footer section ul li {
+  margin-bottom: 10px;
+}
+footer section ul a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+}
+footer section ul a:hover {
+  color: white;
+}
+footer img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+footer img:hover {
+  transform: scale(1.1);
+}
+footer section button {
+  background-color: #fd7e14;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* footer css */
+/* CONTACT PAGE CSS */
+.form {
+  display: flex;
+  background-color: rgb(221, 222, 223);
+  justify-items: start;
+}
+.Contact-form {
+  background-color: white;
+  padding: 40px;
+  width: 90%;
+  margin: 50px;
+  border-radius: 3px;
+}
+
+.Contact-form p {
+  margin-bottom: 30px;
+  color: darkslategray;
+}
+.Contact-form section {
+  display: flex;
+  flex-direction: column;
+}
+.Contact-form section label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(117, 119, 119);
+}
+.Contact-form input,
+.Contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 0.5px solid rgba(56, 56, 56, 0.2);
+}
+.Contact-form textarea {
+  height: 150px;
+  width: 100%;
+  resize: none;
+}
+.Contact-form button {
+  background-color: #fd7e14;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-Address {
+  margin-right: 50px;
+  background-color: white;
+  padding: 30px;
+  height: fit-content;
+  border-radius: 3px;
+  margin: 50px 50px 0px 0px;
+}
+.contact-Address h2 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.contact-Address p {
+  margin-bottom: 5px;
+  color: darkslategray;
+}
+.contact-Address h6 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: rgb(117, 119, 119);
+}
+.contact-Address a {
+  color: #fd7e14;
+}
+/* CONTACT PAGE CSS */
+
+/* News page css */
+.new-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 80px 0px;
+}
+.New-card {
+  border: 0.5px solid rgba(56, 56, 56, 0.2);
+  padding: 10px;
+  max-width: 350px;
+}
+.New-card h5 {
+  font-size: 1.5rem;
+  margin: 15px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.New-card span {
+  font-size: 1rem;
+  color: darkslategray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.New-card span a {
+  color: #fd7e14;
+}
+.New-card p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+/* News page css */
+
+.program_details {
+  display: flex;
+  margin: 0px 125px;
+  padding: 80px 0px;
+}
+.program_details img {
+  border-radius: 30px;
+  margin-right: 64px;
+}
+.program-detail-info {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.program-detail-info h4 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+.program-detail-info p {
+  font-size: 1.3rem;
+  line-height: 28px;
+  color: darkslategray;
+}
+.arrow {
+  margin: 0px 125px;
+}

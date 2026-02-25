@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<!-- HERO SECTION -->
+<section class="hero-img-section">
+  <img
+    src="{% static 'images/hero bg1.webp'%}"
+    alt="hero-img2"
+    width="100%"
+    height="720px"
+  />
+  <section class="hero-bg"></section>
+  <section class="hero-text">
+    <h1>News</h1>
+    <p>Read Our Healthy Tips</p>
+  </section>
+</section>
+<!-- News Section -->
+<section class="new-card-container">
+  {% for item in news %}
+  <section class="New-card">
+    <img
+      src="{% static 'images/img_6.jpg.webp'%}"
+      alt="news-img"
+      width="100%"
+    />
+    <h5>
+      <a href="#">{{item.title}} </a>
+    </h5>
+    <span>{{item.date}} By <a href="#">{{item.author}}</a></span>
+    <p>{{item.description | truncatechars:250}}</p>
+  </section>
+
+  {%endfor%}
+</section>
+
+{% endblock%}
